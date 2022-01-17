@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-current" href="#!">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#!">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-content">
+                <div class="burger-menu">
+                    <ul class="burger-list">
+                        <li class="burger-item current">
+                            <a href="#!">Home</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="#!">About me</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="#!">Skills</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="#!">Portfolio</a>
+                        </li>
+                        <li class="burger-item">
+                            <a href="#!">Contacts</a>
+                        </li>
+                    </ul>
+
+                    <a href="#!" class="close-burger" onclick="popupClose();">
+                        <img src="img/burger-close.png" width="48" height="48">
+                    </a>
+
+                    <p class="lang">
+                        <a class="lang-link" href="#!">RU</a> |
+                        <a  class="lang-link lang-link-current" href="#!">ENG</a>
+                    </p>
+                </div>
+
+                <div class="flex">
+                    <h1 class="name">Denis<br>Novik</h1>
+                    <a href="#!" class="burger" onclick="popupOpen();">
+                        <img src="img/burger.png" width="40" height="20">
+                    </a>
+                </div>
+                <p class="who-is-me">
+                    UX | UI designer<br>
+                    24 years old, Minsk
+                </p>
+                <p class="language">
+                    <a class="language-link" href="#!">RU</a> |
+                    <a  class="language-link language-link-current" href="#!">ENG</a>
+                </p>
+            </div>
+            <picture>
+                <source srcset="img/my-photo-mobile.jpg" media="(max-width: 375px)">
+                <img class="my-photo" src="img/my-photo.jpg" alt="Denis Novik" width="945" height="388">
+            </picture>
+        </header>
+    </div>
+
+    <section class="about-me">
+        <div class="container">
+            <h2 class="about-me-heading">About me</h2>
+            <p class="about-me-text">
+                Hi, I'm Denis - UX/UI designer from Minsk.<br>
+                I'm interested in design and everything connected with it.
+            </p>
+            <p class="about-me-text">
+                I'm studying of courses <br class="br-mobile">"Web and mobile design<br>
+                interfaces" <br class="br-mobile">in IT-Academy.
+            </p>
+            <p class="about-me-text">
+                Ready to implement excellent projects<br>
+                with wonderful people.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2 class="skills-heading">Skills</h2>
+        <p class="working-tools">I work in such programs as</p>
+        <ul class="container programs-list">
+            <li class="odd-item">
+                <img src="img/programs/ps.jpg" alt="">
+                <span class="program-name">Adobe Photoshop</span>
+                <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="even-item">
+                <img src="img/programs/ai.jpg" alt="">
+                <span class="program-name">Adobe Illustrator</span>
+                <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="odd-item">
+                <img src="img/programs/ae.jpg" alt="">
+                <span class="program-name">Adobe<br> After Effects</span>
+                <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+            </li>
+            <li class="even-item">
+                <img src="img/programs/figma.jpg" alt="">
+                <span class="program-name program-name-last">Figma</span>
+                <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2 class="portfolio-heading">Portfolio</h2>
+            <ul>
+                <li>
+                    <picture>
+                        <source srcset="img/sites/site-1-mobile.jpg" media="(max-width: 375px)">
+                        <img class="site-img site-img-first" src="img/sites/site-1.jpg" alt="Woman site" width="937" height="510">
+                    </picture>
+                    <a class="site-link" href="#!">Online fashion store - Homepage</a>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/sites/site-2-mobile.jpg" media="(max-width: 375px)">
+                        <img class="site-img" src="img/sites/site-2.jpg" alt="Reebok Store" width="938" height="522">
+                    </picture>
+                    <a class="site-link" href="#!">Reebok Store - Concept</a>
+                </li>
+                <li>
+                    <picture>
+                        <source srcset="img/sites/site-3-mobile.jpg" media="(max-width: 375px)">
+                        <img class="site-img" src="img/sites/site-3.jpg" alt="Brawn Landing Page" width="937" height="522">
+                    </picture>
+                    <a class="site-link site-link-last" href="#!">Braun Landing Page - Concept</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="container page-footer">
+        <p class="contacts">Contacts</p>
+        <p class="question">
+            Want to know more or just chat?<br>
+            You are welcome!
+        </p>
+        <a class="button" href="#!">Send message</a>
+        <ul class="social">
+            <li>
+                <a href="#!">
+                    <img src="img/social/linked-in.png" alt="linked-in" width="41" height="41">
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <img src="img/social/instagram.png" alt="instagram" width="40" height="41">
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <img src="img/social/be.png" alt="be" width="41" height="40">
+                </a>
+            </li>
+            <li>
+                <a href="#!">
+                    <img src="img/social/ball.png" alt="ball" width="40" height="41">
+                </a>
+            </li>
+        </ul>
+        <p class="like-me">Like me on<br>
+            LinkedIn, Instagram, Behance, Dribble
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
